@@ -20,7 +20,7 @@ in your controller :
                       );
               return $views;
 </code>
-
+<br/>
 template  : 
 <code>
 <table class="table table-bordered">
@@ -31,7 +31,7 @@ template  :
             </tr>
             
 
-     <?php
+     
         
          foreach ($this->track as $track ) { 
                 print '<tr>' ; 
@@ -40,7 +40,7 @@ template  :
                 print '<td>'.$track->getTitle().'</td>' ; 
                 print '</tr>' ; 
         }
-     ?>
+    
             
 </table>
 </code>
