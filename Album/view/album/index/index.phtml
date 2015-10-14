@@ -1,0 +1,67 @@
+<style>
+    table {
+border:3px solid #6495ed;
+border-collapse:collapse;
+width:90%;
+margin:auto;
+}
+thead, tfoot {
+background-color:#D0E3FA;
+background-image:url(sky.jpg);
+border:1px solid #6495ed;
+}
+tbody {
+background-color:#FFFFFF;
+border:1px solid #6495ed;
+}
+th {
+
+border:1px dotted #6495ed;
+padding:5px;
+background-color:#EFF6FF;
+width:25%;
+}
+td {
+
+font-size:100%;
+border:1px solid #6495ed;
+padding:5px;
+text-align:left;
+}
+caption {
+
+}
+</style>
+
+   <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1><?php echo $this->text; ?></h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      </div>
+    </div>
+
+
+   
+   <table class="table table-bordered">
+            <tr>
+                <th>Id</th>
+                <th>TrackTitle</th>
+                <th>Album</th>
+            </tr>
+            
+
+     <?php
+        
+         foreach ($this->track as $track ) { 
+                print '<tr>' ; 
+                print '<td>'.$track->getId().'</td>' ; 
+                print '<td>'.$track->getArtist().'</td>' ; 
+                print '<td>'.$track->getTitle().'</td>' ; 
+                print '</tr>' ; 
+        }
+     ?>
+            
+</table>
+   
