@@ -1,11 +1,7 @@
 <h1>Generate entities ORM </h1>
 ./vendor/doctrine/doctrine-module/bin/doctrine-module orconvert-mapping --namespace="Album\\Entity\\" --force  --from-database annotation ./module/Album/src/  
-
 <br/>
-
 ./vendor/doctrine/doctrine-module/bin/doctrine-module orgenerate-entities ./module/Album/src/ --generate-annotations=true
-
-
 
 in your controller : 
 
