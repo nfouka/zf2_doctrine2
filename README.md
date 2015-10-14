@@ -4,9 +4,13 @@ add doctrine/doctrine-orm-module with
 
              composer require doctrine/doctrine-orm-module
 
-./vendor/doctrine/doctrine-module/bin/doctrine-module orconvert-mapping --namespace="Album\\Entity\\" --force  --from-database annotation ./module/Album/src/  
+<hr/>
+Générate entities with annotation : 
+
+    ./vendor/doctrine/doctrine-module/bin/doctrine-module orconvert-mapping --namespace="Album\\Entity\\" --force  --from-database annotation ./module/Album/src/  
 <br/>
-./vendor/doctrine/doctrine-module/bin/doctrine-module orgenerate-entities ./module/Album/src/ --generate-annotations=true
+
+    ./vendor/doctrine/doctrine-module/bin/doctrine-module orgenerate-entities ./module/Album/src/ --generate-annotations=true
 <hr/>
 in your controller : 
 
@@ -21,7 +25,7 @@ in your controller :
                           )
                       );
               return $views;
-<
+
 <hr/>
 <h2>template  : </h2>
 
