@@ -1,16 +1,14 @@
 <h1>Generate entities ORM </h1>
-<code>
 ./vendor/doctrine/doctrine-module/bin/doctrine-module orconvert-mapping --namespace="Album\\Entity\\" --force  --from-database annotation ./module/Album/src/  
 
 <br/>
 
 ./vendor/doctrine/doctrine-module/bin/doctrine-module orgenerate-entities ./module/Album/src/ --generate-annotations=true
 
-</code>
 
 
 in your controller : 
-<code>
+
               $em = $this->getServiceLocator()->get('doctrine.entitymanager.orm_default');
               $data = $em->getRepository('Album\Entity\Album')->findAll();
  
@@ -22,10 +20,10 @@ in your controller :
                           )
                       );
               return $views;
-</code>
+<
 <br/>
 <h2>template  : </h2>
-<code>
+
 
          foreach ($this->track as $track ) { 
                 print '<tr>' ; 
@@ -36,4 +34,4 @@ in your controller :
         }
     
             
-</code>
+
