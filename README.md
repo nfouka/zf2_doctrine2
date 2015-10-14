@@ -12,7 +12,7 @@ Générate entities with annotation :
 
     ./vendor/doctrine/doctrine-module/bin/doctrine-module orgenerate-entities ./module/Album/src/ --generate-annotations=true
 <hr/>
-in your controller : 
+<h2>Controller </h2> 
 
               $em = $this->getServiceLocator()->get('doctrine.entitymanager.orm_default');
               $data = $em->getRepository('Album\Entity\Album')->findAll();
@@ -27,7 +27,7 @@ in your controller :
               return $views;
 
 <hr/>
-<h2>template  : </h2>
+<h2>template  </h2>
 
 
          foreach ($this->track as $track ) { 
@@ -40,3 +40,6 @@ in your controller :
     
             
 
+Open your navigateur to 
+  
+    http://127.0.0.1:3333/album
