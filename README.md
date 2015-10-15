@@ -1,5 +1,5 @@
-<h1>Generate entities ORM </h1>
-
+<h1>Generate entities ORM with ZF2 AND Doctrine II  </h1>
+<img src='https://raw.githubusercontent.com/zendframework/zf2/234b554f2ca202095aea32e4fa557553f8849664/resources/ZendFramework-logo.png' />
 add doctrine/doctrine-orm-module with 
 
              composer require doctrine/doctrine-orm-module
